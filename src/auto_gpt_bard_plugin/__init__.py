@@ -12,7 +12,7 @@ class Message(TypedDict):
     content: str
 
 
-class AutoGPTPluginTemplate(AbstractSingleton, metaclass=Singleton):
+class AutoGPTBardPlugin(AbstractSingleton, metaclass=Singleton):
     """
     This is a plugin to use Auto-GPT with Google Bard.
     """
