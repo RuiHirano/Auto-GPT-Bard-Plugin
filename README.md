@@ -1,4 +1,4 @@
-# Auto-GPT-Plugin-Template
+# Auto-GPT-Bard-Plugin
 The AutoGPT Bard Plugin is a software tool that enables chat with bard.
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/RuiHirano/Auto-GPT-Bard-Plugin?style=social)](https://github.com/RuiHirano/Auto-GPT-Bard-Plugin/stargazers)
