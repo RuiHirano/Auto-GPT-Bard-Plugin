@@ -3,12 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "auto_gpt_plugin_template"
-version = "0.0.2"
+name = "auto_gpt_bard_plugin"
+version = "0.1.0"
 authors = [
   { name="Torantulino", email="34168009+BillSchumacher@users.noreply.github.com" },
 ]
-description = "The template plugin for Auto-GPT."
+description = "This is a plugin to use Auto-GPT with Google Bard."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [

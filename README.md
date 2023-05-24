@@ -1,14 +1,12 @@
 # Auto-GPT-Plugin-Template
-A starting point for developing your own external plug-in for Auto-GPT
+The AutoGPT Bard Plugin is a software tool that enables chat with bard.
 
-# **If you want your plugin to live within the codebase, use the example in the [plugins repo](https://github.com/Significant-Gravitas/Auto-GPT-Plugins) instead**
+[![GitHub Repo stars](https://img.shields.io/github/stars/RuiHirano/Auto-GPT-Bard-Plugin?style=social)](https://github.com/RuiHirano/Auto-GPT-Bard-Plugin/stargazers)
 
 ### Plugin Installation Steps
 
 1. **Clone or download the plugin repository:**
    Clone the plugin repository, or download the repository as a zip file.
-  
-   ![Download Zip](https://raw.githubusercontent.com/BillSchumacher/Auto-GPT/master/plugin.png)
 
 2. **Install the plugin's dependencies (if any):**
    Navigate to the plugin's folder in your terminal, and run the following command to install any required dependencies:
@@ -27,7 +25,19 @@ A starting point for developing your own external plug-in for Auto-GPT
    Add the plugin's class name to the `ALLOWLISTED_PLUGINS` in the `.env` file to avoid being prompted with a warning when loading the plugin:
 
    ``` shell
-   ALLOWLISTED_PLUGINS=example-plugin1,example-plugin2,example-plugin3
+   ALLOWLISTED_PLUGINS=AutoGPTBardPlugin,example-plugin2,example-plugin3
    ```
 
    If the plugin is not allowlisted, you will be warned before it's loaded.
+
+6. **Add environment variables in .env:**
+Append the following configuration settings to the end of the file:
+
+```ini
+################################################################################
+### Bard
+################################################################################
+BARD_SESSION_TOKEN=
+```
+- Get bard session token. Reference is [here](https://github.com/acheong08/Bard)
+
