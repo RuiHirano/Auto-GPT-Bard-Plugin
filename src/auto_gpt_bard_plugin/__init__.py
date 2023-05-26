@@ -59,7 +59,7 @@ class AutoGPTBardPlugin(AbstractSingleton, metaclass=Singleton):
             {
                 "question": "<question>",
             },
-            self.chat_with_prompt
+            self.chat_with_bard
         )
         return prompt
 
