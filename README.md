@@ -38,6 +38,8 @@ Append the following configuration settings to the end of the file:
 ### Bard
 ################################################################################
 BARD_SESSION_TOKEN=
+BARD_COMMAND_LABEL=chat_with_bard
+BARD_COMMAND_NAME=Chat with bard
 ```
 - Get bard session token. Reference is [here](https://github.com/acheong08/Bard)
 
