@@ -1,8 +1,10 @@
 """This is a template for Auto-GPT plugins."""
-from typing import Any, Dict, List, Optional, Tuple, TypeVar, TypedDict
+from typing import Any, Dict, List, Optional, Tuple, TypedDict, TypeVar
 
 from abstract_singleton import AbstractSingleton, Singleton
+
 from .bard import BardChatbot
+from .settings import settings
 
 PromptGenerator = TypeVar("PromptGenerator")
 
@@ -54,8 +56,8 @@ class AutoGPTBardPlugin(AbstractSingleton, metaclass=Singleton):
             PromptGenerator: The prompt generator.
         """
         prompt.add_command(
-            "chat_with_bard",
-            "Chat with bard",
+            settings.BARD_COMMAND_LABEL,
+            settings.BARD_COMMAND_NAME,
             {
                 "question": "<question>",
             },
